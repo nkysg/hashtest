@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="hashtest"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/yesonggao/CLionProjects/hashtest/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yesonggao/CLionProjects/hashtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yesonggao/CLionProjects/hashtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yesonggao/CLionProjects/hashtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yesonggao/CLionProjects/hashtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/yesonggao/CLionProjects/hashtest/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yesonggao/CLionProjects/hashtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yesonggao/CLionProjects/hashtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yesonggao/CLionProjects/hashtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yesonggao/CLionProjects/hashtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/yesonggao/CLionProjects/hashtest/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yesonggao/CLionProjects/hashtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yesonggao/CLionProjects/hashtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yesonggao/CLionProjects/hashtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yesonggao/CLionProjects/hashtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="hashtest">
+				<Option output="/Users/yesonggao/CLionProjects/hashtest/cmake-build-debug/hashtest" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yesonggao/CLionProjects/hashtest/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yesonggao/CLionProjects/hashtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 hashtest"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yesonggao/CLionProjects/hashtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yesonggao/CLionProjects/hashtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yesonggao/CLionProjects/hashtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="hashtest/fast">
+				<Option output="/Users/yesonggao/CLionProjects/hashtest/cmake-build-debug/hashtest" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yesonggao/CLionProjects/hashtest/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yesonggao/CLionProjects/hashtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 hashtest/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yesonggao/CLionProjects/hashtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yesonggao/CLionProjects/hashtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yesonggao/CLionProjects/hashtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/yesonggao/CLionProjects/hashtest/aesb.c">
+			<Option target="hashtest"/>
+		</Unit>
+		<Unit filename="/Users/yesonggao/CLionProjects/hashtest/c_blake256.c">
+			<Option target="hashtest"/>
+		</Unit>
+		<Unit filename="/Users/yesonggao/CLionProjects/hashtest/c_blake256.h">
+			<Option target="hashtest"/>
+		</Unit>
+		<Unit filename="/Users/yesonggao/CLionProjects/hashtest/c_groestl.c">
+			<Option target="hashtest"/>
+		</Unit>
+		<Unit filename="/Users/yesonggao/CLionProjects/hashtest/c_groestl.h">
+			<Option target="hashtest"/>
+		</Unit>
+		<Unit filename="/Users/yesonggao/CLionProjects/hashtest/c_jh.c">
+			<Option target="hashtest"/>
+		</Unit>
+		<Unit filename="/Users/yesonggao/CLionProjects/hashtest/c_jh.h">
+			<Option target="hashtest"/>
+		</Unit>
+		<Unit filename="/Users/yesonggao/CLionProjects/hashtest/c_keccak.c">
+			<Option target="hashtest"/>
+		</Unit>
+		<Unit filename="/Users/yesonggao/CLionProjects/hashtest/c_keccak.h">
+			<Option target="hashtest"/>
+		</Unit>
+		<Unit filename="/Users/yesonggao/CLionProjects/hashtest/c_skein.c">
+			<Option target="hashtest"/>
+		</Unit>
+		<Unit filename="/Users/yesonggao/CLionProjects/hashtest/c_skein.h">
+			<Option target="hashtest"/>
+		</Unit>
+		<Unit filename="/Users/yesonggao/CLionProjects/hashtest/cryptonight.c">
+			<Option target="hashtest"/>
+		</Unit>
+		<Unit filename="/Users/yesonggao/CLionProjects/hashtest/cryptonight.h">
+			<Option target="hashtest"/>
+		</Unit>
+		<Unit filename="/Users/yesonggao/CLionProjects/hashtest/hash.c">
+			<Option target="hashtest"/>
+		</Unit>
+		<Unit filename="/Users/yesonggao/CLionProjects/hashtest/hash.h">
+			<Option target="hashtest"/>
+		</Unit>
+		<Unit filename="/Users/yesonggao/CLionProjects/hashtest/main.c">
+			<Option target="hashtest"/>
+		</Unit>
+		<Unit filename="/Users/yesonggao/CLionProjects/hashtest/oaes_lib.c">
+			<Option target="hashtest"/>
+		</Unit>
+		<Unit filename="/Users/yesonggao/CLionProjects/hashtest/oaes_lib.h">
+			<Option target="hashtest"/>
+		</Unit>
+		<Unit filename="/Users/yesonggao/CLionProjects/hashtest/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

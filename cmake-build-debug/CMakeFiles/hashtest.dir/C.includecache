@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/yesonggao/CLionProjects/hashtest/cryptonight.h
+stdint.h
+-
+
+/Users/yesonggao/CLionProjects/hashtest/main.c
+stdio.h
+-
+string.h
+-
+cryptonight.h
+/Users/yesonggao/CLionProjects/hashtest/cryptonight.h
+time.h
+-
+

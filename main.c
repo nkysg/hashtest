@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-#include "cryptonight.h"
+#include "hash-ops.h"
 const int VARIANT = 4;
 const int HEIGHT = 0;
 int main() {
@@ -13,9 +13,9 @@ int main() {
             0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
             0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
             0x00, 0x00, 0x00, 0xb1, 0xec, 0x37
-            };
+    };
     unsigned char output[32] = {0};
-    cryptonight_hash(input,output, sizeof(input), VARIANT, HEIGHT);
+    cn_slow_hash(input, sizeof(input), output, VARIANT, 0, HEIGHT);
     for (int i = 0; i < 32; i++) {
         printf("%x ", output[i]);
     }

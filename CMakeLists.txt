@@ -29,7 +29,7 @@ cmake_minimum_required(VERSION 3.20)
 project(hashtest C)
 
 set(CMAKE_C_STANDARD 99)
-set(CMAKE_CXX_FLAGS "-mavx ${CMAKE_CXX_FLAGS}")
+set(CMAKE_C_FLAGS "-maes -msse2 -O3 ${CMAKE_CXX_FLAGS}")
 
 add_executable(hashtest main.c
   aesb.c

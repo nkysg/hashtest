@@ -50,11 +50,8 @@
 #define INIT_SIZE_BLK   8
 #define INIT_SIZE_BYTE (INIT_SIZE_BLK * AES_BLOCK_SIZE)
 
-#if defined(_MSC_VER)
-#define THREADV __declspec(thread)
-#else
+
 #define THREADV __thread
-#endif
 
 extern void aesb_single_round(const uint8_t *in, uint8_t *out, const uint8_t *expandedKey);
 extern void aesb_pseudo_round(const uint8_t *in, uint8_t *out, const uint8_t *expandedKey);
@@ -339,24 +336,6 @@ static inline int force_software_aes(void)
 // Fall back to more portable code is down at the bottom
 
 #include <emmintrin.h>
-
-#if defined(_MSC_VER)
-#include <intrin.h>
-#include <windows.h>
-#define STATIC
-#define INLINE __inline
-#if !defined(RDATA_ALIGN16)
-#define RDATA_ALIGN16 __declspec(align(16))
-#endif
-#elif defined(__MINGW32__)
-#include <intrin.h>
-#include <windows.h>
-#define STATIC static
-#define INLINE inline
-#if !defined(RDATA_ALIGN16)
-#define RDATA_ALIGN16 __attribute__ ((aligned(16)))
-#endif
-#else
 #include <wmmintrin.h>
 #include <sys/mman.h>
 #define STATIC static
@@ -364,7 +343,7 @@ static inline int force_software_aes(void)
 #if !defined(RDATA_ALIGN16)
 #define RDATA_ALIGN16 __attribute__ ((aligned(16)))
 #endif
-#endif
+
 
 #if defined(__INTEL_COMPILER)
 #define ASM __asm__
@@ -833,8 +812,14 @@ void cn_slow_hash(const void *data, size_t length, char *hash, int variant, int 
     /* CryptoNight Step 2:  Iteratively encrypt the results from Keccak to fill
      * the 2MB large random access buffer.
      */
-    if(0)
+    if(useAes)
     {
+        aes_expand_key(state.hs.b, expandedKey);
+        for(i = 0; i < MEMORY / INIT_SIZE_BYTE; i++)
+        {
+            aes_pseudo_round(text, text, expandedKey, INIT_SIZE_BLK);
+            memcpy(&local_hp_state[i * INIT_SIZE_BYTE], text, INIT_SIZE_BYTE);
+        }
     }
     else
     {
@@ -863,8 +848,14 @@ void cn_slow_hash(const void *data, size_t length, char *hash, int variant, int 
     _b1 = _mm_load_si128(R128(b) + 1);
     // Two independent versions, one with AES, one without, to ensure that
     // the useAes test is only performed once, not every iteration.
-    if(0)
+    if(useAes)
     {
+        for(i = 0; i < ITER / 2; i++)
+        {
+            pre_aes();
+            _c = _mm_aesenc_si128(_c, _a);
+            post_aes();
+        }
     }
     else
     {
@@ -881,8 +872,14 @@ void cn_slow_hash(const void *data, size_t length, char *hash, int variant, int 
      * was originally created with the output of Keccak1600. */
 
     memcpy(text, state.init, INIT_SIZE_BYTE);
-    if(0)
+    if(useAes)
     {
+        aes_expand_key(&state.hs.b[32], expandedKey);
+        for(i = 0; i < MEMORY / INIT_SIZE_BYTE; i++)
+        {
+            // add the xor to the pseudo round
+            aes_pseudo_round_xor(text, text, expandedKey, &local_hp_state[i * INIT_SIZE_BYTE], INIT_SIZE_BLK);
+        }
     }
     else
     {

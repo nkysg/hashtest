@@ -18,16 +18,16 @@ int main() {
     };
 
     int start = time(NULL);
-    for (int i = 0; i < 100; i++) {
+    for (int i = 0; i < 1000; i++) {
         unsigned char output[32] = {0};
         cn_slow_hash(input, sizeof(input), output, VARIANT, 0, HEIGHT);
         // for (int i = 0; i < 32; i++) {
-      //  printf("%x ", output[i]);
+        //printf("%x ", output[i]);
         // }
         //output should be
         // 42 37 51 4 56 41 3b f4 35 aa 39 e3 c6 45 c0 9d 3a fc e8 25 b3 da 70 c6 c3 69 af 67 8e 0 0 0
     }
     int end = time(NULL);
-    printf("time cost %lld\n", end - start);
+    printf("time cost %d\n", end - start);
     return 0;
 }

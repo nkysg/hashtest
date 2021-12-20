@@ -9,7 +9,8 @@ CMakeFiles/hashtest.dir/blake256.c.o: \
 CMakeFiles/hashtest.dir/groestl.c.o: \
  ../groestl.c \
  ../groestl.h \
- ../groestl_tables.h
+ ../groestl_tables.h \
+ ../int-util.h
 CMakeFiles/hashtest.dir/hash-extra-blake.c.o: \
  ../blake256.h \
  ../hash-extra-blake.c
@@ -49,6 +50,7 @@ CMakeFiles/hashtest.dir/oaes_lib.c.o: \
  ../oaes_lib.c \
  ../oaes_lib.h
 CMakeFiles/hashtest.dir/skein.c.o: \
+ ../int-util.h \
  ../skein.c \
  ../skein.h \
  ../skein_port.h

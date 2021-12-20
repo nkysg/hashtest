@@ -43,6 +43,5 @@ add_executable(hashtest main.c
         jh.c
   keccak.c
   oaes_lib.c
-  random.c
-  skein.c
+        skein.c
   slow-hash.c)

@@ -48,12 +48,6 @@ CMakeFiles/hashtest.dir/oaes_lib.c.o: \
  ../oaes_config.h \
  ../oaes_lib.c \
  ../oaes_lib.h
-CMakeFiles/hashtest.dir/random.c.o: \
- ../hash-ops.h \
- ../initializer.h \
- ../int-util.h \
- ../random.c \
- ../random.h
 CMakeFiles/hashtest.dir/skein.c.o: \
  ../skein.c \
  ../skein.h \

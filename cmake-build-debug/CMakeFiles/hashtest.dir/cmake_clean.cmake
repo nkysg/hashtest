@@ -11,7 +11,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/hashtest.dir/keccak.c.o"
   "CMakeFiles/hashtest.dir/main.c.o"
   "CMakeFiles/hashtest.dir/oaes_lib.c.o"
-  "CMakeFiles/hashtest.dir/random.c.o"
   "CMakeFiles/hashtest.dir/skein.c.o"
   "CMakeFiles/hashtest.dir/slow-hash.c.o"
   "hashtest"

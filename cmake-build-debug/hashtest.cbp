@@ -134,12 +134,6 @@
 		<Unit filename="/Users/yesonggao/CLionProjects/hashtest/oaes_lib.h">
 			<Option target="hashtest"/>
 		</Unit>
-		<Unit filename="/Users/yesonggao/CLionProjects/hashtest/random.c">
-			<Option target="hashtest"/>
-		</Unit>
-		<Unit filename="/Users/yesonggao/CLionProjects/hashtest/random.h">
-			<Option target="hashtest"/>
-		</Unit>
 		<Unit filename="/Users/yesonggao/CLionProjects/hashtest/skein.c">
 			<Option target="hashtest"/>
 		</Unit>

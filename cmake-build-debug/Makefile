@@ -417,30 +417,6 @@ oaes_lib.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/hashtest.dir/build.make CMakeFiles/hashtest.dir/oaes_lib.c.s
 .PHONY : oaes_lib.c.s
 
-random.o: random.c.o
-.PHONY : random.o
-
-# target to build an object file
-random.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hashtest.dir/build.make CMakeFiles/hashtest.dir/random.c.o
-.PHONY : random.c.o
-
-random.i: random.c.i
-.PHONY : random.i
-
-# target to preprocess a source file
-random.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hashtest.dir/build.make CMakeFiles/hashtest.dir/random.c.i
-.PHONY : random.c.i
-
-random.s: random.c.s
-.PHONY : random.s
-
-# target to generate assembly for a file
-random.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hashtest.dir/build.make CMakeFiles/hashtest.dir/random.c.s
-.PHONY : random.c.s
-
 skein.o: skein.c.o
 .PHONY : skein.o
 
@@ -534,9 +510,6 @@ help:
 	@echo "... oaes_lib.o"
 	@echo "... oaes_lib.i"
 	@echo "... oaes_lib.s"
-	@echo "... random.o"
-	@echo "... random.i"
-	@echo "... random.s"
 	@echo "... skein.o"
 	@echo "... skein.i"
 	@echo "... skein.s"

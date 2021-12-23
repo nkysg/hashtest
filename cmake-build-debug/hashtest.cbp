@@ -4,146 +4,148 @@
 	<Project>
 		<Option title="hashtest"/>
 		<Option makefile_is_custom="1"/>
-		<Option compiler="gcc"/>
+		<Option compiler="msvc8"/>
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/yesonggao/CLionProjects/hashtest/cmake-build-debug"/>
+				<Option working_dir="D:/hashtest/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/yesonggao/CLionProjects/hashtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yesonggao/CLionProjects/hashtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yesonggao/CLionProjects/hashtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yesonggao/CLionProjects/hashtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="rebuild_cache">
-				<Option working_dir="/Users/yesonggao/CLionProjects/hashtest/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/yesonggao/CLionProjects/hashtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yesonggao/CLionProjects/hashtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yesonggao/CLionProjects/hashtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yesonggao/CLionProjects/hashtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="/Users/yesonggao/CLionProjects/hashtest/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/yesonggao/CLionProjects/hashtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yesonggao/CLionProjects/hashtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yesonggao/CLionProjects/hashtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yesonggao/CLionProjects/hashtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f D:\hashtest\cmake-build-debug\Makefile VERBOSE=1 all"/>
+					<CompileFile command="nmake /NOLOGO /f D:\hashtest\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\hashtest\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\hashtest\cmake-build-debug\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="hashtest">
-				<Option output="/Users/yesonggao/CLionProjects/hashtest/cmake-build-debug/hashtest" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir=""/>
+				<Option output="D:/hashtest/cmake-build-debug/hashtest.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/hashtest/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
-				<Option compiler="gcc"/>
+				<Option compiler="msvc8"/>
 				<Compiler>
-					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
+					<Add directory="D:\Programs\VS\VC\Tools\MSVC\14.29.30133\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/yesonggao/CLionProjects/hashtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 hashtest"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yesonggao/CLionProjects/hashtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yesonggao/CLionProjects/hashtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yesonggao/CLionProjects/hashtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f D:\hashtest\cmake-build-debug\Makefile VERBOSE=1 hashtest"/>
+					<CompileFile command="nmake /NOLOGO /f D:\hashtest\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\hashtest\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\hashtest\cmake-build-debug\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="hashtest/fast">
-				<Option output="/Users/yesonggao/CLionProjects/hashtest/cmake-build-debug/hashtest" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir=""/>
+				<Option output="D:/hashtest/cmake-build-debug/hashtest.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/hashtest/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
-				<Option compiler="gcc"/>
+				<Option compiler="msvc8"/>
 				<Compiler>
-					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
+					<Add directory="D:\Programs\VS\VC\Tools\MSVC\14.29.30133\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/yesonggao/CLionProjects/hashtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 hashtest/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yesonggao/CLionProjects/hashtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yesonggao/CLionProjects/hashtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yesonggao/CLionProjects/hashtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f D:\hashtest\cmake-build-debug\Makefile VERBOSE=1 hashtest/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\hashtest\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\hashtest\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\hashtest\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="D:/hashtest/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\hashtest\cmake-build-debug\Makefile VERBOSE=1 edit_cache"/>
+					<CompileFile command="nmake /NOLOGO /f D:\hashtest\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\hashtest\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\hashtest\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="D:/hashtest/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\hashtest\cmake-build-debug\Makefile VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="nmake /NOLOGO /f D:\hashtest\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\hashtest\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\hashtest\cmake-build-debug\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/yesonggao/CLionProjects/hashtest/aesb.c">
+		<Unit filename="D:/hashtest/aesb.c">
 			<Option target="hashtest"/>
 		</Unit>
-		<Unit filename="/Users/yesonggao/CLionProjects/hashtest/blake256.c">
+		<Unit filename="D:/hashtest/blake256.c">
 			<Option target="hashtest"/>
 		</Unit>
-		<Unit filename="/Users/yesonggao/CLionProjects/hashtest/blake256.h">
+		<Unit filename="D:/hashtest/blake256.h">
 			<Option target="hashtest"/>
 		</Unit>
-		<Unit filename="/Users/yesonggao/CLionProjects/hashtest/groestl.c">
+		<Unit filename="D:/hashtest/groestl.c">
 			<Option target="hashtest"/>
 		</Unit>
-		<Unit filename="/Users/yesonggao/CLionProjects/hashtest/groestl.h">
+		<Unit filename="D:/hashtest/groestl.h">
 			<Option target="hashtest"/>
 		</Unit>
-		<Unit filename="/Users/yesonggao/CLionProjects/hashtest/hash-extra-blake.c">
+		<Unit filename="D:/hashtest/hash-extra-blake.c">
 			<Option target="hashtest"/>
 		</Unit>
-		<Unit filename="/Users/yesonggao/CLionProjects/hashtest/hash-extra-groestl.c">
+		<Unit filename="D:/hashtest/hash-extra-groestl.c">
 			<Option target="hashtest"/>
 		</Unit>
-		<Unit filename="/Users/yesonggao/CLionProjects/hashtest/hash-extra-jh.c">
+		<Unit filename="D:/hashtest/hash-extra-jh.c">
 			<Option target="hashtest"/>
 		</Unit>
-		<Unit filename="/Users/yesonggao/CLionProjects/hashtest/hash-extra-skein.c">
+		<Unit filename="D:/hashtest/hash-extra-skein.c">
 			<Option target="hashtest"/>
 		</Unit>
-		<Unit filename="/Users/yesonggao/CLionProjects/hashtest/hash.c">
+		<Unit filename="D:/hashtest/hash.c">
 			<Option target="hashtest"/>
 		</Unit>
-		<Unit filename="/Users/yesonggao/CLionProjects/hashtest/hash.h">
+		<Unit filename="D:/hashtest/hash.h">
 			<Option target="hashtest"/>
 		</Unit>
-		<Unit filename="/Users/yesonggao/CLionProjects/hashtest/jh.c">
+		<Unit filename="D:/hashtest/jh.c">
 			<Option target="hashtest"/>
 		</Unit>
-		<Unit filename="/Users/yesonggao/CLionProjects/hashtest/jh.h">
+		<Unit filename="D:/hashtest/jh.h">
 			<Option target="hashtest"/>
 		</Unit>
-		<Unit filename="/Users/yesonggao/CLionProjects/hashtest/keccak.c">
+		<Unit filename="D:/hashtest/keccak.c">
 			<Option target="hashtest"/>
 		</Unit>
-		<Unit filename="/Users/yesonggao/CLionProjects/hashtest/keccak.h">
+		<Unit filename="D:/hashtest/keccak.h">
 			<Option target="hashtest"/>
 		</Unit>
-		<Unit filename="/Users/yesonggao/CLionProjects/hashtest/main.c">
+		<Unit filename="D:/hashtest/main.c">
 			<Option target="hashtest"/>
 		</Unit>
-		<Unit filename="/Users/yesonggao/CLionProjects/hashtest/oaes_lib.c">
+		<Unit filename="D:/hashtest/oaes_lib.c">
 			<Option target="hashtest"/>
 		</Unit>
-		<Unit filename="/Users/yesonggao/CLionProjects/hashtest/oaes_lib.h">
+		<Unit filename="D:/hashtest/oaes_lib.h">
 			<Option target="hashtest"/>
 		</Unit>
-		<Unit filename="/Users/yesonggao/CLionProjects/hashtest/skein.c">
+		<Unit filename="D:/hashtest/skein.c">
 			<Option target="hashtest"/>
 		</Unit>
-		<Unit filename="/Users/yesonggao/CLionProjects/hashtest/skein.h">
+		<Unit filename="D:/hashtest/skein.h">
 			<Option target="hashtest"/>
 		</Unit>
-		<Unit filename="/Users/yesonggao/CLionProjects/hashtest/slow-hash.c">
+		<Unit filename="D:/hashtest/slow-hash.c">
 			<Option target="hashtest"/>
 		</Unit>
-		<Unit filename="/Users/yesonggao/CLionProjects/hashtest/CMakeLists.txt">
+		<Unit filename="D:/hashtest/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

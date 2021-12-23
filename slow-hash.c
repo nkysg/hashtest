@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2020, The Monero Project
+// Copyright (c) 2018-2021, StarCoin Project
 //
 // All rights reserved.
 //
@@ -33,8 +33,9 @@
 #include <stdint.h>
 #include <string.h>
 #include <stdio.h>
+#ifndef _WIN32
 #include <unistd.h>
-
+#endif
 #include "int-util.h"
 #include "hash-ops.h"
 #include "oaes_lib.h"
@@ -51,20 +52,14 @@
 #define INIT_SIZE_BYTE (INIT_SIZE_BLK * AES_BLOCK_SIZE)
 
 
+#if defined(_WIN32)
+#define THREADV __declspec(thread)
+#else
 #define THREADV __thread
+#endif
 
 extern void aesb_single_round(const uint8_t *in, uint8_t *out, const uint8_t *expandedKey);
 extern void aesb_pseudo_round(const uint8_t *in, uint8_t *out, const uint8_t *expandedKey);
-
-static void local_abort(const char *msg)
-{
-  fprintf(stderr, "%s\n", msg);
-#ifdef NDEBUG
-  _exit(1);
-#else
-  abort();
-#endif
-}
 
 #if defined(__x86_64__) || defined(__aarch64__)
 static inline int force_software_aes(void)
@@ -739,7 +734,7 @@ void cn_slow_hash_free_state(void)
 }
 
 /**
- * @brief the hash function implementing CryptoNight, used for the Monero proof-of-work
+ * @brief the hash function implementing CryptoNight, used for StarCoin proof-of-work
  *
  * Computes the hash of <data> (which consists of <length> bytes), returning the
  * hash in <hash>.  The CryptoNight hash operates by first using Keccak 1600,
@@ -970,8 +965,6 @@ void cn_slow_hash_free_state(void)
 #endif
 
 #define U64(x) ((uint64_t *) (x))
-
-#define hp_jitfunc ((v4_random_math_JIT_func)NULL)
 
 STATIC INLINE void xor64(uint64_t *a, const uint64_t b)
 {
@@ -1584,8 +1577,6 @@ void cn_slow_hash(const void *data, size_t length, char *hash, int variant, int 
 #else
 // Portable implementation as a fallback
 
-#define hp_jitfunc ((v4_random_math_JIT_func)NULL)
-
 void cn_slow_hash_allocate_state(void)
 {
   // Do nothing, this is just to maintain compatibility with the upgraded slow-hash.c
@@ -1669,6 +1660,7 @@ union cn_slow_hash_state {
 };
 #pragma pack(pop)
 
+#define FORCE_USE_HEAP
 void cn_slow_hash(const void *data, size_t length, char *hash, int variant, int prehashed, uint64_t height) {
 #ifndef FORCE_USE_HEAP
   uint8_t long_state[MEMORY];

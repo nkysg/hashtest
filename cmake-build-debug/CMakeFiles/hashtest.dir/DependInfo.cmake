@@ -8,22 +8,22 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/Users/yesonggao/CLionProjects/hashtest/aesb.c" "/Users/yesonggao/CLionProjects/hashtest/cmake-build-debug/CMakeFiles/hashtest.dir/aesb.c.o"
-  "/Users/yesonggao/CLionProjects/hashtest/blake256.c" "/Users/yesonggao/CLionProjects/hashtest/cmake-build-debug/CMakeFiles/hashtest.dir/blake256.c.o"
-  "/Users/yesonggao/CLionProjects/hashtest/groestl.c" "/Users/yesonggao/CLionProjects/hashtest/cmake-build-debug/CMakeFiles/hashtest.dir/groestl.c.o"
-  "/Users/yesonggao/CLionProjects/hashtest/hash-extra-blake.c" "/Users/yesonggao/CLionProjects/hashtest/cmake-build-debug/CMakeFiles/hashtest.dir/hash-extra-blake.c.o"
-  "/Users/yesonggao/CLionProjects/hashtest/hash-extra-groestl.c" "/Users/yesonggao/CLionProjects/hashtest/cmake-build-debug/CMakeFiles/hashtest.dir/hash-extra-groestl.c.o"
-  "/Users/yesonggao/CLionProjects/hashtest/hash-extra-jh.c" "/Users/yesonggao/CLionProjects/hashtest/cmake-build-debug/CMakeFiles/hashtest.dir/hash-extra-jh.c.o"
-  "/Users/yesonggao/CLionProjects/hashtest/hash-extra-skein.c" "/Users/yesonggao/CLionProjects/hashtest/cmake-build-debug/CMakeFiles/hashtest.dir/hash-extra-skein.c.o"
-  "/Users/yesonggao/CLionProjects/hashtest/hash.c" "/Users/yesonggao/CLionProjects/hashtest/cmake-build-debug/CMakeFiles/hashtest.dir/hash.c.o"
-  "/Users/yesonggao/CLionProjects/hashtest/jh.c" "/Users/yesonggao/CLionProjects/hashtest/cmake-build-debug/CMakeFiles/hashtest.dir/jh.c.o"
-  "/Users/yesonggao/CLionProjects/hashtest/keccak.c" "/Users/yesonggao/CLionProjects/hashtest/cmake-build-debug/CMakeFiles/hashtest.dir/keccak.c.o"
-  "/Users/yesonggao/CLionProjects/hashtest/main.c" "/Users/yesonggao/CLionProjects/hashtest/cmake-build-debug/CMakeFiles/hashtest.dir/main.c.o"
-  "/Users/yesonggao/CLionProjects/hashtest/oaes_lib.c" "/Users/yesonggao/CLionProjects/hashtest/cmake-build-debug/CMakeFiles/hashtest.dir/oaes_lib.c.o"
-  "/Users/yesonggao/CLionProjects/hashtest/skein.c" "/Users/yesonggao/CLionProjects/hashtest/cmake-build-debug/CMakeFiles/hashtest.dir/skein.c.o"
-  "/Users/yesonggao/CLionProjects/hashtest/slow-hash.c" "/Users/yesonggao/CLionProjects/hashtest/cmake-build-debug/CMakeFiles/hashtest.dir/slow-hash.c.o"
+  "D:/hashtest/aesb.c" "D:/hashtest/cmake-build-debug/CMakeFiles/hashtest.dir/aesb.c.obj"
+  "D:/hashtest/blake256.c" "D:/hashtest/cmake-build-debug/CMakeFiles/hashtest.dir/blake256.c.obj"
+  "D:/hashtest/groestl.c" "D:/hashtest/cmake-build-debug/CMakeFiles/hashtest.dir/groestl.c.obj"
+  "D:/hashtest/hash-extra-blake.c" "D:/hashtest/cmake-build-debug/CMakeFiles/hashtest.dir/hash-extra-blake.c.obj"
+  "D:/hashtest/hash-extra-groestl.c" "D:/hashtest/cmake-build-debug/CMakeFiles/hashtest.dir/hash-extra-groestl.c.obj"
+  "D:/hashtest/hash-extra-jh.c" "D:/hashtest/cmake-build-debug/CMakeFiles/hashtest.dir/hash-extra-jh.c.obj"
+  "D:/hashtest/hash-extra-skein.c" "D:/hashtest/cmake-build-debug/CMakeFiles/hashtest.dir/hash-extra-skein.c.obj"
+  "D:/hashtest/hash.c" "D:/hashtest/cmake-build-debug/CMakeFiles/hashtest.dir/hash.c.obj"
+  "D:/hashtest/jh.c" "D:/hashtest/cmake-build-debug/CMakeFiles/hashtest.dir/jh.c.obj"
+  "D:/hashtest/keccak.c" "D:/hashtest/cmake-build-debug/CMakeFiles/hashtest.dir/keccak.c.obj"
+  "D:/hashtest/main.c" "D:/hashtest/cmake-build-debug/CMakeFiles/hashtest.dir/main.c.obj"
+  "D:/hashtest/oaes_lib.c" "D:/hashtest/cmake-build-debug/CMakeFiles/hashtest.dir/oaes_lib.c.obj"
+  "D:/hashtest/skein.c" "D:/hashtest/cmake-build-debug/CMakeFiles/hashtest.dir/skein.c.obj"
+  "D:/hashtest/slow-hash.c" "D:/hashtest/cmake-build-debug/CMakeFiles/hashtest.dir/slow-hash.c.obj"
   )
-set(CMAKE_C_COMPILER_ID "AppleClang")
+set(CMAKE_C_COMPILER_ID "MSVC")
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH

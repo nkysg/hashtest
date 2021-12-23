@@ -1,4 +1,4 @@
-# Copyright (c) 2014-2020, The Monero Project
+# Copyright (c) 2018-2021, StarCoin Project
 #
 # All rights reserved.
 #
@@ -29,7 +29,8 @@ cmake_minimum_required(VERSION 3.20)
 project(hashtest C)
 
 set(CMAKE_C_STANDARD 99)
-set(CMAKE_C_FLAGS "-maes -msse2 -O3 ${CMAKE_CXX_FLAGS}")
+#set(CMAKE_C_FLAGS "-maes -msse2 -O3 ${CMAKE_CXX_FLAGS}")
+set(CMAKE_C_FLAGS "/arch:SSE2 /arch:AES /Ot ${CMAKE_CXX_FLAGS}")
 
 add_executable(hashtest main.c
   aesb.c

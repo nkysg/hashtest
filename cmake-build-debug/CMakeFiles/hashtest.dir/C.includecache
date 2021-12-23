@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/Users/yesonggao/CLionProjects/hashtest/hash-ops.h
+D:/hashtest/hash-ops.h
 assert.h
 -
 stdbool.h
@@ -16,9 +16,9 @@ stddef.h
 stdint.h
 -
 int-util.h
-/Users/yesonggao/CLionProjects/hashtest/int-util.h
+D:/hashtest/int-util.h
 
-/Users/yesonggao/CLionProjects/hashtest/int-util.h
+D:/hashtest/int-util.h
 assert.h
 -
 stdbool.h
@@ -36,13 +36,57 @@ endian.h
 stdlib.h
 -
 
-/Users/yesonggao/CLionProjects/hashtest/main.c
-stdio.h
+D:/hashtest/oaes_lib.h
+stdint.h
+-
+stdlib.h
+-
+
+D:/hashtest/slow-hash.c
+assert.h
+-
+stddef.h
+-
+stdint.h
 -
 string.h
 -
-time.h
+stdio.h
 -
+unistd.h
+-
+int-util.h
+D:/hashtest/int-util.h
 hash-ops.h
-/Users/yesonggao/CLionProjects/hashtest/hash-ops.h
+D:/hashtest/hash-ops.h
+oaes_lib.h
+D:/hashtest/oaes_lib.h
+variant2_int_sqrt.h
+D:/hashtest/variant2_int_sqrt.h
+variant4_random_math.h
+D:/hashtest/variant4_random_math.h
+errno.h
+-
+emmintrin.h
+-
+wmmintrin.h
+-
+sys/mman.h
+-
+sys/mman.h
+-
+arm_neon.h
+-
+sys/auxv.h
+-
+asm/hwcap.h
+-
+
+D:/hashtest/variant2_int_sqrt.h
+math.h
+-
+float.h
+-
+
+D:/hashtest/variant4_random_math.h
 
